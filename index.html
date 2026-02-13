@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Kelas XII TKJ A</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="tech-bg">
+        <div class="grid"></div>
+        <svg class="circuit" viewBox="0 0 1000 600" preserveAspectRatio="none">
+            <g fill="none" stroke="rgba(0,255,255,.6)" stroke-width="1.5">
+                <path class="pulse" d="M50 100 H300 V220 H520"/>
+                <circle cx="520" cy="220" r="4" fill="rgba(0,255,255,.9)"/>
+                <path class="pulse" d="M150 400 H420 V320 H780"/>
+                <circle cx="420" cy="320" r="4" fill="rgba(0,255,255,.9)"/>
+                <path class="pulse" d="M700 120 V260 H900"/>
+                <circle cx="700" cy="260" r="4" fill="rgba(0,255,255,.9)"/>
+            </g>
+        </svg>
+    </div>
+
+    <div class="login-page" id="loginPage">
+        <div class="login-box">
+            <h2>LOGIN CLASS</h2>
+            <input id="username" placeholder="Username">
+            <input id="password" type="password" placeholder="Password">
+            <button onclick="login()">ACCESS</button>
+        </div>
+    </div>
+
+    <div id="mainContent" style="display:none">
+        <header>
+            <h3><i class="fa-solid fa-microchip"></i> XII TKJ A</h3>
+            <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+            <nav id="navMenu">
+                <a href="#home">Home</a>
+                <a href="#organisasi">Organisasi</a>
+                <a href="#jadwal">Pelajaran</a>
+                <a href="#piket">Piket</a>
+                <a href="#galeri">Galeri</a>
+            </nav>
+        </header>
+
+        <section class="hero" id="home" data-aos="fade-up">
+            <div>
+                <h1>COMPUTER NETWORK ENGINEERING</h1>
+                <p>SMKN 5 Kuningan</p>
+            </div>
+        </section>
+
+        <section id="organisasi">
+            <h2 data-aos="fade-right">Struktur Organisasi</h2>
+            <div class="card-container">
+                <div class="card" data-aos="zoom-in"><i class="fa fa-user-astronaut"></i><h4>Ketua</h4><p>Nama</p></div>
+                <div class="card" data-aos="zoom-in"><i class="fa fa-user-astronaut"></i><h4>Wakil</h4><p>Nama</p></div>
+                <div class="card" data-aos="zoom-in"><i class="fa fa-user-astronaut"></i><h4>Sekretaris</h4><p>Nama</p></div>
+                <div class="card" data-aos="zoom-in"><i class="fa fa-user-astronaut"></i><h4>Bendahara</h4><p>Nama</p></div>
+            </div>
+        </section>
+
+        <section id="jadwal">
+            <h2 data-aos="fade-up">Jadwal Pelajaran</h2>
+            <div class="jadwal-wrapper" data-aos="zoom-in">
+                <table class="jadwal-table">
+                    <thead>
+                        <tr>
+                          <th rowspan="2">Hari</th>
+                          <th>Jam ke-1</th>
+                          <th>Jam ke-2</th>
+                          <th>Jam ke-3</th>
+                          <th>Jam ke-4</th>
+                          <th>Jam ke-5</th>
+                          <th rowspan="2" class="istirahat">Istirahat 1</th>
+                          <th>Jam 6</th>
+                          <th>Jam 7</th>
+                          <th rowspan="2" class="istirahat">Istirahat 2</th>
+                           <th>Jam 8</th>
+                          <th>Jam 9</th>
+                          <th>Jam 10</th>
+                          <th>jam 11</th>
+                        </tr>
+                        <tr>
+                          <th>06:30 - 07:15</th>
+                          <th>07:15 - 07:55</th>
+                          <th>07:55 - 08:35</th>
+                          <th>08:35 - 09:15</th>
+                          <th>09:15 - 09:55</th>
+                          <th>10:10 - 10:50</th>
+                          <th>10:50 - 11:30</th>
+                          <th>12:30 - 13:10</th>
+                          <th>13:10 - 13:50</th>
+                          <th>13:50 - 14:30</th>
+                          <th>14:30 - 15:10</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                          <td>Senin</td>
+                          <td>Upacara<br></td>
+                           <td colspan="2">
+                            <div class="cell-content">
+                              <small class="guru">Asep Nurhidayat S.Kom</small>
+                               <div class="mapel">PJKdT</div>
+                              <small class="lab">Lab 3</small>
+                            </div>
+                            </td>
+                            <td colspan="2">
+                              <div class="cell-content">
+                                <small class="guru">IRMAN NURDIANSYAH S.Kom</small>
+                                <div class="mapel">KJ</div>
+                              </div>
+                            </td>
+                            <td></td>
+                            <td colspan="2">
+                              <div class="cell-content">
+                                <small class="guru">IRMAN NURDIANSYAH S.Kom</small>
+                                <div class="mapel">KJ</div>
+                            </div>
+                          </td>
+                          <td></td>
+                          <td colspan="3">
+                            <div class="cell-content">
+                              <small class="guru">ROHIM ISNAIN. S. W,S.Pd</small>
+                              <div class="mapel">Matematika</div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>Selasa</td>
+                           <td>pwmbinan<br>siswa</td>
+                           <td colspan="3">
+                           <div class="cell-content">
+                           <small class="guru">DARYA, M.Pd.I</small>
+                           <div class="mapel">PAI</div>
+                              </div>
+                           </td>
+                           
+                           <td>
+                              <div class="cell-content">
+                                <small class="guru">IRMAN NURDIANSYAH S.Kom</small>
+                                <div class="mapel">KJ</div>
+                                <div class="lab">LAB TKJ 4</div>
+                              </div>
+                            </td>
+                            
+                            <td></td>
+                            
+                            <td>
+                              <div class="cell-content">
+                                <small class="guru">IRMAN NURDIANSYAH</small>
+                                <div class="mapel">KJ</div>
+                                <div class="lab">LAB TKJ 4</div>
+                              </div>
+                            </td>
+                            
+                            <td>
+                              <dic class="cell-content">
+                                <small class="guru">TRISNA CITA EKA N.SPd</small>
+                                <div class="mapel">BK</div>
+                              </dic>
+                            </td>
+                            
+                            <td></td>
+                            
+                            <td colspan="2">
+                              <dic class="cell-content">
+                                <small class="guru">RESA SITI ZAHARA S.Pd</small>
+                                <div class="mapel">B.Jepang</div>
+                              </dic>
+                            </td>
+                                                        <td colspan="2">
+                              <dic class="cell-content">
+                                <small class="guru">Siti Maryanti, S.Pd</small>
+                                <div class="mapel">Fisika</div>
+                              </dic>
+                            </td>
+                        </tr>
+                        <tr>
+                           <td>Rabu</td>
+                           <td>senam<br>sehat</td>
+
+                           <td colspan="3">
+                           <div class="cell-content">
+                           <small class="guru">EMAN SURYAMAN S.Kom</small>
+                           <div class="mapel">PdKPJ</div>
+                              </div>
+                           </td>
+                           
+                           <td>
+                           <div class="cell-content">
+                           <small class="guru">ARI SUHARI S.Pd</small>
+                           <div class="mapel">B.Indonesia</div>
+                              </div>
+                           </td>
+                           
+                           <td></td>
+                           
+                           <td colspan="2">
+                           <div class="cell-content">
+                           <small class="guru">ARI SUHARI S.Pd</small>
+                           <div class="mapel">B.Indonesia</div>
+                              </div>
+                           </td>
+                           
+                           <td></td>
+                           
+                           <td colspan="2">
+                           <div class="cell-content">
+                           <small class="guru">JUARI, SE</small>
+                           <div class="mapel">PPKN</div>
+                              </div>
+                           </td>
+                           
+                            <td colspan="2">
+                              <div class="cell-content">
+                                <small class="guru">INTAN NUR FITRI, S.Kom</small>
+                                <div class="mapel">adm. sistm. Jar.</div>
+                                <div class="lab">LAB TKJ 1</div>
+                              </div>
+                            </td>
+                        </tr>
+                        <tr>
+                          <td>Kamis</td>
+                          <td>Kreatifitas</td>
+                          <td colspan="4">
+                            <div class="cell-content">
+                              <small class="guru">INTAN NUR FITRI,S.Kom</small>
+                              <div class="mapel">adm. sistm. Jar.</div>
+                            </div>
+                          </td>
+                          
+                          <td></td>
+                          
+                          <td colspan="2">
+                            <div class="cell-content">
+                              <small class="guru">INTAN NUR FITRI,S.Kom</small>
+                              <div class="mapel">adm. sistm. jar.</div>
+                            </div>
+                          </td>
+                          
+                          <td></td>
+                          
+                          <td colspan="4">
+                            <div class="cell-content">
+                              <small class="guru">INDRA RUKMANA, S.Pd</small>
+                              <div class="mapel">B.Inggris</div>
+                            </div>
+                          </td>
+                          
+                        </tr>
+                        <tr>
+                          
+                          <td>Jum'at</td>
+                          <td>agm</td>
+                          <td colspan="4">
+                            <div class="cell-content">
+                              <small class="guru">EMAN SURYAMAN, S.Kom</small>
+                              <div class="mapel">PdKPJ</div>
+                            </div>
+                          </td>
+                          
+                          <td></td>
+                          
+                          <td>
+                            <div class="cell-content">
+                              <small class="guru">EMAN SURYAMAN, S.Kom</small>
+                              <div class="mapel">PdKPJ</div>
+                            </div>
+                          </td>
+                          
+                          <td>
+                            <div class="cell-content">
+                              <small class="guru">INTAN. N. F, S.Kom</small>
+                              <div class="mapel">PKK</div>
+                            </div>
+                          </td>
+                          
+                          <td></td>
+                          
+                          <td colspan="4">
+                            <div class="cell-content">
+                              <small class="guru">INTAN NUR FITRI, S.Kom</small>
+                              <div class="mapel">PKK</div>
+                            </div>
+                          </td>
+                          
+                        </tr>
+                        
+                        </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section id="piket">
+            <h2 data-aos="fade-right">Jadwal Piket Kelas</h2>
+            <div class="piket-container" data-aos="zoom-in">
+                <div class="piket-card" data-day="senin">
+                    <h3>Senin <button class="edit-btn" onclick="editPiket(this)">Edit</button></h3>
+                    <div class="piket-nama"><div>Nama</div><div>Nama</div><div>Nama</div><div>Nama</div><div>Nama</div><div>Nama</div><div>Nama</div><div>Nama</div></div>
+                </div>
+                <div class="piket-card" data-day="senin">
+                    <h3>Selasa <button class="edit-btn" onclick="editPiket(this)">Edit</button></h3>
+                    <div class="piket-nama"><div>Nama</div><div>Nama</div><div>Nama</div><div>Nama</div><div>Nama</div><div>Nama</div><div>Nama</div><div>Nama</div></div>
+                </div>
+                <div class="piket-card" data-day="senin">
+                    <h3>Rabu <button class="edit-btn" onclick="editPiket(this)">Edit</button></h3>
+                    <div class="piket-nama"><div>Nama</div><div>Nama</div><div>Nama</div><div>Nama</div><div>Nama</div><div>Nama</div><div>Nama</div><div>Nama</div></div>
+                </div>
+                <div class="piket-card" data-day="senin">
+                    <h3>Kamis <button class="edit-btn" onclick="editPiket(this)">Edit</button></h3>
+                    <div class="piket-nama"><div>Nama</div><div>Nama</div><div>Nama</div><div>Nama</div><div>Nama</div><div>Nama</div><div>Nama</div><div>Nama</div></div>
+                </div>
+                <div class="piket-card" data-day="senin">
+                    <h3>Jum'at <button class="edit-btn" onclick="editPiket(this)">Edit</button></h3>
+                    <div class="piket-nama"><div>Nama</div><div>Nama</div><div>Nama</div><div>Nama</div><div>Nama</div><div>Nama</div><div>Nama</div><div>Nama</div></div>
+                </div>
+           </div>
+        </section>
+
+        <section id="galeri">
+            <h2 data-aos="fade-left">Galeri Kelas</h2>
+            <div class="slider" data-aos="zoom-in">
+                <div class="slides">
+                    <img src="kelas.jpg">
+                    <img src="kelas.jpg">
+                    <img src="kelas.jpg">
+                </div>
+            </div>
+        </section>
+
+        <footer>© 2026 Computer Network Engineering</footer>
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
